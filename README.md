@@ -16,21 +16,21 @@
  
  <p align=center>
   
-  <img src="ToDoAPPs/src/image.png">
+  <img src="CSFinalProject/src/game.jpeg">
   
  </p>
 
  When the player winn will see:
  <p align=center>
   
-  <img src="ToDoAPPs/src/image.png">
+  <img src="CSFinalProject/src/winner.jpeg">
   
  </p>
 
  When the player lose will see:
  <p align=center>
   
-  <img src="ToDoAPPs/src/image.png">
+  <img src="CSFinalProject/src/loser.jpeg">
   
  </p>
 
