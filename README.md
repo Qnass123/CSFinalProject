@@ -1,6 +1,7 @@
-# CSFinalProject
-# Qt pacman
+# CSFinalProject (pacman)
+
 # Summary
+- Thanks
 - Overview
 - Itroduction
 - Principal steps:
@@ -9,8 +10,12 @@
   - Step 3: Implement update_score and keyPressEvent
 - Conclusion
 
-## Introduction :
 
+ ## Thanks :
+  We would like to thank our supervisor Mr. Anass Belcaid ,for the great effort he has provided and all the time he has particularized us. Without forgetting his encouragement and help throughout this project, his wise advice his support to make this work a success.
+
+## Introduction :
+We want to point out in this presentation that this game is known worldwide and we made it in our own way inspired by the idea of a group of games on the Internet like her.
  ## Overview :
  Play with arrow keys.
  
@@ -95,8 +100,8 @@ MainWindow::MainWindow(QWidget *parent)
 Set the geometry of `graphicsView` and `game`. Read game map from [map.txt](https://github.com/blueskyson/Qt-pac-man/blob/master/game_objects/map_objects/map.txt).
 
 ```cpp
-    int map_height = 20, map_width = 29;            // 20x29 game map
-    int x = 50, y = 50;                             // coordinate in mainwindow
+    int map_height = 23, map_width = 35;            // 23x35 game map
+    int x = 60, y = 60;                             // coordinate in mainwindow
     int w = (map_width * GameObject::Width);        // width pixel
     int h = (map_height * GameObject::Width);       // height pixel
     ui->graphicsView->setGeometry(x, y, w, h);
@@ -147,20 +152,20 @@ Detect key press events from w, a, s, d keys and make pacman move.
 void MainWindow::keyPressEvent(QKeyEvent *e)
 {
     switch (e->key()) {
-    case Qt::Key_W:
+    case Qt::Key_Up:
         game->pacman_next_direction(GameObject::Up);
         break;
-    case Qt::Key_A:
+    case Qt::Key_Left:
         game->pacman_next_direction(GameObject::Left);
         break;
-    case Qt::Key_S:
+    case Qt::Key_Down:
         game->pacman_next_direction(GameObject::Down);
         break;
-    case Qt::Key_D:
+    case Qt::Key_Right:
         game->pacman_next_direction(GameObject::Right);
         break;
     }
 }
 ```
 ## Conclusion
-
+  In Conclusion this Project can say that it was really a very nice experience even if we found difficulties at the level of the relay agent and on the research of subject but me and my colleague, we understood the objective of this project by doing it, we learned how to carry out a project and how pose ideas by posing a strategy and be able to do know or be able to understand the other, without forget of course to thank Mr. Anass Belcaid for these efforts and these advices during the period.
